@@ -1,0 +1,98 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   font-family: sans-serif;
+   line-height: 1.5;
+   /* letter-spacing: ; */
+}
+
+body {
+   background-color: #232b2b73;
+   width: 100%;
+   height: 100vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+main, .message {
+   width: 60%;
+   background-color: #b9f9fa;
+}
+main {
+   margin-bottom: 0.5rem;
+}
+
+.header {
+   background-color: darkslategrey;
+   color: #b9f9fa;
+   padding: 1rem 1.5rem;
+   text-transform: uppercase;
+   letter-spacing: 2px;
+}
+
+.input-box-wrapper {
+   padding: 1rem 1.5rem;
+   display: flex;
+   justify-content: space-between;
+   font-weight: 700;
+   width: 100%;
+}
+
+.input-box {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.input {
+   border: 1px solid #232b2b73;
+   outline: none;
+   padding: 0.5rem 0.2rem;
+   font-size: inherit;
+   line-height: inherit;
+}
+
+.btn-wrapper {
+   align-self: flex-end;
+}
+
+.btn-wrapper button {
+   border: 1px solid #232b2b73;
+   background-color: darkslategrey;
+   color: #b9f9fa;
+   outline: none;
+   padding: 0.5rem 0.2rem;
+   font-size: inherit;
+   line-height: inherit;
+}
+
+.message {
+   padding: 1rem 1.5rem;
+   font-weight: 600;
+}
+
+@media (max-width: 1146px) {
+   .header {
+      text-align: center;
+      margin: auto;
+   }
+   .input-box-wrapper {
+      padding: 1rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      font-weight: 700;
+      width: min(50vw, 400px);
+      margin: auto;
+  }
+
+  .input-box {
+     margin-bottom: 1rem;
+  }
+}

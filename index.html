@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>BMI-Rechner</title>
+    
+  </head>
+  <body>
+     
+     <main>
+         <div class="header">
+            <h1>BMI - Rechner</h1>
+         </div>
+         <div class="input-box-wrapper">
+            <div class="gewicht input-box">
+            <label for="gewicht">Gewicht</label>
+            <input class="input" type="number" id="gewicht" placeholder="Kg" value='' />
+            </div>
+            <div class="groesse input-box">
+            <label for="groesse">Größe</label>
+            <input class="input" type="number" id="groesse" placeholder="cm" value='' />
+            </div>
+            <div class="geschlecht input-box">
+            <label for="geschlecht">Geschlecht</label>
+            <select class="input" name="geschlecht" id="geschlecht">
+               <option value="">Select</option>
+               <option value="weiblich">Weiblich</option>
+               <option value="männlich">Männlich</option>
+            </select>
+            </div>
+            <div class="btn-wrapper input-box">
+               <button onclick="calcBmi()">BMI berechnen</button>
+            </div>
+         </div>
+      </main>
+      <div class="message">
+         <p id="bmiWert">Ergebnis: </p>
+      </div>
+    <script src="index.js"></script>
+  </body>
+</html>
